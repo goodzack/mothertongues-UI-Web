@@ -1,34 +1,55 @@
 var config = {
   L1: {
-    name: '<YourLanguageName>',
+    name: 'Hul\u2019q\u2019umi\u2019num\u20192',
     lettersInLanguage: [
-      'a',
-      'b',
-      'c',
-      'd',
-      'e',
-      'f',
-      'g',
+      'ts',
+      'ts\u2019',
+      'ch',
+      'ch\u2019',
       'h',
-      'i',
-      'j',
-      'k',
+      'kw',
+      'kw\u2019',
       'l',
+      'lh',
+      'tl\u2019',
       'm',
       'n',
-      'o',
       'p',
+      'p\u2019',
       'q',
-      'r',
+      'q\u2019',
+      'qw',
+      'qw\u2019',
       's',
+      'sh',
       't',
-      'u',
-      'v',
+      't\u2019',
+      'tth',
+      'tth\u2019',
+      'th',
       'w',
+      'hw',
       'x',
-      'y',
-      'z'
-    ]
+      'xw',
+      'y\u2019'
+    ],
+    transducers: {
+      'hulq-approx': [
+        { 'ts\u2019': 'ts' },
+        { 'ch\u2019': 'ch' },
+        { 'kw\u2019': 'kw' },
+        { 'p\u2019': 'p' },
+        { 'q\u2019': 'q' },
+        { 'qw\u2019': 'qw' },
+        { 't\u2019': 't' },
+        { 'tth\u2019': 'tth' },
+        { x: 'h' },
+        { h: 'x' },
+        { q: 'k' },
+        { k: 'q' }
+      ]
+    }
   },
-  L2: { name: 'English' }
+  L2: { name: 'English' },
+  build: '202008172129'
 };
